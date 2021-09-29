@@ -1,0 +1,8 @@
+###### List of required python libraries ######
+## To install the libraries, use:
+# pip -r requirements.txt
+pytest
+allure-pytest
+pytest-xdist
+selenium
+webdriver-manager
