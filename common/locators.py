@@ -1,27 +1,19 @@
 from selenium.webdriver.common.by import By
 
-class saka_Locators():
-    GUI_CONTAINER = (By.ID,"GUIContainer")
+class qlearly_Locators():
+    # DETAILS_SCREEN
+    CLM_LST_COLUMN_NAME_DETAILS_SCREEN = (By.XPATH,"//div[@class='white_box fullheight dragable-element ui-sortable-handle']//input[@class='column-input']")
+    BTN_SKIP_DETAILS_SCREEN = (By.XPATH, "//button[@id='choose_bn_skip']")
+    BTN_INTRO_SKIP_DETAILS_SCREEN = (By.XPATH,"//a[@class='introjs-button introjs-skipbutton']")
+    BTN_LST_ADD_BOARD_DETAILS_SCREEN = (By.XPATH,"//div//button[@class='btn theme_btn btn-block']")
+    TXT_BOOKMARK_URL_ALIKE = (By.XPATH, "//a[@href='~#REPLACE_PROPERTY#~']") # here ~#REPLACE_PROPERTY#~ will be website name
+    TXT_BOOKMARK_NAME_ALIKE = (By.XPATH,"//p[contains(text(),'~#REPLACE_PROPERTY#~')]")
 
-    # --- Home Page Locators ---
-    SEARCH_TEXTBOX=(By.ID, "twotabsearchtextbox")
-    SEARCH_SUBMIT_BUTTON=(By.XPATH,"//div[contains(@class,'nav-search-submit')]/input")
+    # CREATE_NEW Screen
+    EDT_ENTRY_TITLE_CREATE_NEW = (By.ID, "entry_title")
+    EDT_ENTRY_WEBSITE_URL_CREATE_NEW = (By.ID, "entry_website_url")
+    BTN_CREATE_NEW = (By.XPATH,"//button[contains(text(),'CREATE')]")
 
-    # --- Search Results Page Locators ---
-    SEARCH_RESULT_LINK=(By.XPATH, "(//div[@class='sg-col-inner']//img[contains(@data-image-latency,'s-product-image')])[2]")
 
-    # --- Product Details Page Locators ---
-    ADD_TO_CART_BUTTON=(By.ID, "add-to-cart-button")
 
-    # --- Sub Cart Page Locators ---
-    SUB_CART_DIV=(By.ID,"hlb-subcart")
-    PROCEED_TO_BUY_BUTTON=(By.ID,"hlb-ptc-btn-native")
-    CART_COUNT=(By.ID,"nav-cart-count")
-    CART_LINK=(By.ID,"nav-cart")
 
-    # --- Cart Page Locators ---
-    DELETE_ITEM_LINK=(By.XPATH,"//div[contains(@class,'a-row sc-action-links')]//span[contains(@class,'sc-action-delete')]")
-    CART_COUNT=(By.ID,'nav-cart-count')
-    PROCEED_TO_CHECKOUT_BUTTON=(By.NAME,"proceedToCheckout")
-    # --- Signin Page Locators ---
-    USER_EMAIL_OR_MOBIL_NO_TEXTBOX=(By.ID,"ap_email")
